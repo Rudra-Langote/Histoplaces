@@ -25,6 +25,7 @@ html, body{
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 5px 15px 0px gray;
+    animation: nav-down 1.5s ease  1  forwards;
 }
 .nav-title{
     color: white;
@@ -70,6 +71,7 @@ html, body{
     margin: 1vw;
     padding: 1vw;
     position: relative;
+    animation: popup 1.5s ease  1  forwards;
 }
 .title-head h1{
     font-size: 3vw;
@@ -77,25 +79,27 @@ html, body{
 }
 .slid-div{
     width: 100%;
-    height: 400px;
+    box-sizing: border-box;
+    padding: 2vw;
     display: flex;
     justify-content: center;
+    gap: 100px;
     flex-wrap: wrap;
     align-items: center ;
-    gap: 140px;
     position: relative;
-    margin-top: 2vw;
+    margin-top: 0.5vw;
    
 }
 
 
 .card{
-    height: 350px ;
     width: 300px;
     background-color: white;
     border-radius: 10px;
-    padding: 0.6vw;
+    padding: 0.5vw;
+    margin: 1vw;
     box-shadow: 0px 0px 20px 5px grey;
+    animation: fadein 1.5s ease  1  forwards;
     
 }
 
@@ -104,35 +108,70 @@ html, body{
     border-radius: 10px;
 }
 .card-title{
-    height: 100px;
-    width: 300px;
-    padding: 1vw;
+    margin: 1vw;
 }
 
 .card-title h2{
     justify-content: flex-start;
-    margin: 0.5vw;
-    padding: 0.5vw;
+    margin-bottom: 1vw;
+    font-weight: 700;
 }
 .card-title p{
-    font-size: 12px;
-    width: 300px;
+    font-size: 15px;
+    font-weight: 500;
 }
 .button{
     display: flex;
-    margin-top: 0.5vw;
+    margin: 1vw;
+    padding-top: 1vw;
     justify-content: center;
 }
 .btn{
     border-radius: 10px;
     padding: 0.7vw 3vw;
     border: 1px solid gray;
-    font-weight: bolder;
+    font-weight: 500;
     background-color: white;
     cursor: pointer;
 }
+@keyframes fadein {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+        /* transform: translateZ(-100px) scale(0.8); */
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+        /* transform: translate(0px) scale(1); */
+    }
+}
+@keyframes popup {
+    0%{
+        opacity: 0;
+        transform: translateZ(-100px) scale(0.8);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px) scale(1);
+    }
+}
+@keyframes nav-down {
+    0%{
+        transform: translateY(-70px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+.btn:hover{
+    color: white;
+    background-color: black;
+
+}
 .height-card img{
-    height: 165px;
+    height: 170px;
 }
 .logo img{
     width: 3vw;
@@ -163,20 +202,15 @@ html, body{
         width: 2vw;
         display: block;
     }
-    .card-title{
-        padding: 1vw;
-    }
+   
     .card-title p{
-        font-size: vw;
-    }
-    .card-title p{
-        font-size: 2vw;
+        font-size: 15px;
     }
     .button{
-        margin-top: 3vw;
+        margin: 2vw;
     }
     .btn{
-        padding: 1.5vw 5vw;
+        padding: 1vw 3vw;
     }
     .title-head{
         margin: 2vw;
@@ -187,22 +221,6 @@ html, body{
     }
     
     
-}
-@media (min-width:1500px) {
-    .card-title h2{
-        padding: 0.1vw;
-        margin: 0.1vw;
-    }
-    .card-title p{
-        font-size: 0.5vw;
-        font-weight: 600;
-    }
-    .button{
-        margin-top: 1vw;
-    }
-    .btn{
-        padding: 0.5vw 2vw;
-    }
 }
 
 
