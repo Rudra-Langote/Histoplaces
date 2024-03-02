@@ -1,0 +1,210 @@
+
+*{
+    
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+     font-optical-sizing: auto;
+
+}
+.layout{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.navbar{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 15px 0px gray;
+}
+.nav-title{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    font-weight: 700;
+    gap: 1vw;
+    
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    gap: 5vw;
+}
+.nav-list h4{
+    font-size: 1.2vw;
+    font-weight: 300;
+}
+.nav-list img{
+    width: 2vw;
+    display: none;
+
+}
+
+.nav-title logo img{
+    width: 40px;
+    height: 40px;
+    
+}
+
+
+.title-head{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw;
+    padding: 1vw;
+    position: relative;
+}
+.title-head h1{
+    font-size: 3vw;
+    font-weight: 900;
+}
+.slid-div{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center ;
+    gap: 140px;
+    position: relative;
+    margin-top: 2vw;
+   
+}
+
+
+.card{
+    height: 350px ;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.6vw;
+    box-shadow: 0px 0px 20px 5px grey;
+    
+}
+
+.card img{
+    width: 300px;
+    border-radius: 10px;
+}
+.card-title{
+    height: 100px;
+    width: 300px;
+    padding: 1vw;
+}
+
+.card-title h2{
+    justify-content: flex-start;
+    margin: 0.5vw;
+    padding: 0.5vw;
+}
+.card-title p{
+    font-size: 12px;
+    width: 300px;
+}
+.button{
+    display: flex;
+    margin-top: 0.5vw;
+    justify-content: center;
+}
+.btn{
+    border-radius: 10px;
+    padding: 0.7vw 3vw;
+    border: 1px solid gray;
+    font-weight: bolder;
+    background-color: white;
+    cursor: pointer;
+}
+.height-card img{
+    height: 165px;
+}
+.logo img{
+    width: 3vw;
+}
+.title-head-second{
+    padding: 1.5vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 2vw;
+    font-weight: 900;
+
+}
+@media (max-width:900px) {
+
+    .navbar{
+        height: 50px;
+    }
+
+    .nav-title{
+        font-size: 2vw;
+    }
+    .nav-list h4{
+        display: none;
+    }
+    .nav-list img{
+        width: 2vw;
+        display: block;
+    }
+    .card-title{
+        padding: 1vw;
+    }
+    .card-title p{
+        font-size: vw;
+    }
+    .card-title p{
+        font-size: 2vw;
+    }
+    .button{
+        margin-top: 3vw;
+    }
+    .btn{
+        padding: 1.5vw 5vw;
+    }
+    .title-head{
+        margin: 2vw;
+        padding: 2vw;
+    }
+    .title-head h1{
+        font-size: 4vw;
+    }
+    
+    
+}
+@media (min-width:1500px) {
+    .card-title h2{
+        padding: 0.1vw;
+        margin: 0.1vw;
+    }
+    .card-title p{
+        font-size: 0.5vw;
+        font-weight: 600;
+    }
+    .button{
+        margin-top: 1vw;
+    }
+    .btn{
+        padding: 0.5vw 2vw;
+    }
+}
+
+
+
+
