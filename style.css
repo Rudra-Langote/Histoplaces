@@ -10,6 +10,7 @@ html, body{
     box-sizing: border-box;
     font-family: "Roboto Mono", monospace;
      font-optical-sizing: auto;
+     scroll-behavior: smooth;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -53,6 +54,13 @@ body::-webkit-scrollbar{
 .nav-list h4{
     font-size: 1.2vw;
     font-weight: 300;
+}
+.nav-list h4:hover{
+    font-weight: 500;
+}
+.nav-list a{
+    text-decoration: none;
+    color: white;
 }
 .nav-list img{
     width: 2vw;
@@ -186,7 +194,7 @@ body::-webkit-scrollbar{
     justify-content: center;
     align-items: center;
     position: relative;
-    font-size: 2vw;
+    font-size: 1vw;
     font-weight: 900;
     animation: popup 1.5s ease  1  forwards;
 
@@ -198,6 +206,7 @@ body::-webkit-scrollbar{
     justify-items: center;
     align-items: center;
     animation: fadein 1.5s ease  1  forwards;
+    position: relative;
 
 }
 .states h5{
@@ -211,6 +220,44 @@ body::-webkit-scrollbar{
 }
 .states h5:hover{
     font-weight: 900;
+}
+.foot{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.foot h5{
+    color: white;
+    font-size: 1.3vw;
+    padding: 1vw 1.5vw;
+    font-weight: 400;
+}
+.foot p{
+    color: white;
+    font-size: 1vw;
+    margin: 0vw 4vw;
+    text-align: center;
+    font-weight: 200;
+    width: 60vw;
+}
+.link-img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 1vw;
+    
+
+}
+.link-img img{
+    width: 3vw;
+    cursor: pointer;
+    
 }
 @media (max-width:900px) {
 
@@ -258,6 +305,35 @@ body::-webkit-scrollbar{
         font-size: 4vw;
         font-weight: 700;
     }
-    
-    
+  
+    .title-head-second h1{
+        margin: 5vw 1vw;
+        font-size: 4vw;
+    }
+    .states{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .states h5{
+        font-size: 4vw;
+        font-weight: 200;
+        margin: 2vw 0vw;
+    }
+    .foot h5{
+        font-size: 4vw;
+        font-weight: 600;
+    }
+    .foot p{
+        font-size: 3vw;
+        width: 90vw;
+    }
+    .link-img{
+        gap: 15px;
+        padding: 4vw;
+    }
+    .link-img img{
+        width: 7vw;
+    }
+       
 }
