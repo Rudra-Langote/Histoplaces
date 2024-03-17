@@ -12,10 +12,10 @@ Simple and Intuitive Design: User-friendly interface for seamless navigation.
 
 ## Screenshot
 ### Desktop View
-<img src="../Resourse/Desktopview.jpeg">
+<img src="../main/Resourse/Desktopview.jpeg">
 
 ### Mobile View
-<img src="../Resourse/Mobileview.jpg">
+<img src="../main/Resourse/Mobileview.jpg">
 
  ## How to Use
 Clone the repository to your local machine.
